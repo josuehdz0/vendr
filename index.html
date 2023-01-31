@@ -10,33 +10,65 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css"
     integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
   <title>vendr</title>
 </head>
 
-<body>
+<body class="">
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">vendr</span>
-      </a>
+    <nav class=" maincolor navbar-expand  d-flex justify-content-center no-select p-3">
+      <h2>PLANT VENDING MACHINE</h2>
     </nav>
   </header>
   <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
-        </div>
+    <div class="container">
+      <div class="row justify-content-evenly py-4" id="plants">
+        <!-- NOTE This is my ListTemplate -->
+        <!-- <div class="col-3 p-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80"
+              alt="">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-7">
+                  <h6 class="pt-3">Monsterra</h6>
+                  <h6>$25</h6>
+                </div>
+                <div class="col-5 d-flex align-items-center justify-content-center">
+                  <button class="text-center btn btn-primary">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
   </main>
-  <footer class="bg-dark text-light">
+  <footer class="maincolor">
     <div class="text-center no-select">
-      <p><small>Made with 💖 by CodeWorks</small></p>
+      <p><small>thanks for buying</small></p>
     </div>
   </footer>
 
