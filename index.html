@@ -39,8 +39,11 @@
   <header>
     <nav class=" maincolor navbar-expand  d-flex justify-content-evenly no-select p-3">
       <h2>PLANT VENDING MACHINE</h2>
-      <h4>Total: $<span>0</span> </h4>
-      <button class="text-center btn btn-primary" onclick="">
+
+      <h4>Total: <span id="money">0</span> </h4>
+
+
+      <button class="text-center btn btn-primary" onclick="app.plantsController.addMoney()">
         <h6>ADD $1.50</h6>
       </button>
     </nav>

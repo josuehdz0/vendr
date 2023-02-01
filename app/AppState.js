@@ -65,7 +65,7 @@ class AppState extends EventEmitter {
   ]
 
 
-
+money = 30
 }
 
 export const appState = new Proxy(new AppState(), {
