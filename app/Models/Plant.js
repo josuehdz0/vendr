@@ -20,7 +20,7 @@ export class Plant{
                   alt="">
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-7">
+                    <div class="col-md-7">
                       <h6 class="">${this.name}</h6>
                       <h6>$${this.price}</h6>
                     </div>
