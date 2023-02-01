@@ -8,14 +8,15 @@ class PlantsService {
     console.log(appState.money);
   }
 
-  buyPlant(plant){
+  buyPlant(name){
     // NOTE this isnt working  i think becaise of how that array has been made. plant.price isnt being defined here
-    let plantPrice = plant.price;
-    if (appState.money>=plantPrice) {
-      appState.money -= plantPrice;
+    let currentPlant = appState.plants.find(p=> p.name == name) 
+    // appState.money-=currentPlant.price
+    if (appState.money>=currentPlant.price) {
+      appState.money -= currentPlant.price;
     }
     else{
-      console.log(`You broke, you need $${plantPrice-appState.money} more to buy ${plant.name}`);
+      console.log(`You broke, you need $${currentPlant.price-appState.money} more to buy ${currentPlant.name}`);
     }
   }
 

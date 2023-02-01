@@ -26,7 +26,7 @@ export class Plant{
                     </div>
                     <div class="col-5 d-flex align-items-center justify-content-center">
                       <button class="text-center btn btn-primary"
-                      onclick="app.plantsController.buyPlant('plant')">
+                      onclick="app.plantsController.buyPlant('${this.name}')">
                       
                       Buy
                       
