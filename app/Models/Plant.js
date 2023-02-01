@@ -25,7 +25,12 @@ export class Plant{
                       <h6>$${this.price}</h6>
                     </div>
                     <div class="col-5 d-flex align-items-center justify-content-center">
-                      <button class="text-center btn btn-primary">Buy</button>
+                      <button class="text-center btn btn-primary"
+                      onclick="app.plantsController.buyPlant('plant')">
+                      
+                      Buy
+                      
+                      </button>
                     </div>
                   </div>
                 </div>

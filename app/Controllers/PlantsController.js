@@ -32,6 +32,10 @@ export class PlantsController{
     plantsService.addMoney()
   }
 
+  buyPlant(plant){
+   plantsService.buyPlant(plant)
+  }
+
 
 
 
